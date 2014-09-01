@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DKMMViewController : UIViewController
+@interface DKMMViewController : UIViewController <UITextFieldDelegate>
+
+@property (strong, nonatomic) IBOutlet UILabel *numberOfColorsLabel;
+@property (strong, nonatomic) IBOutlet UILabel *numberOfLocationsLabel;
+@property (strong, nonatomic) IBOutlet UILabel *correctAnswerLabel;
+@property (strong, nonatomic) IBOutlet UITextField *guessTextField;
+@property (strong, nonatomic) IBOutlet UILabel *winLabel;
+@property (strong, nonatomic) IBOutlet UILabel *numberOfGuessesLabel;
+
+- (IBAction)startOverButtonPressed:(id)sender;
+- (IBAction)guessButtonPressed:(UIButton *)sender;
+- (IBAction)iGiveUpButtonPressed:(UIButton *)sender;
 
 @end
