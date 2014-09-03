@@ -7,6 +7,7 @@
 //
 
 #import "DKMMViewController.h"
+#import "CodeMaker.h"
 
 @interface DKMMViewController ()
 @property (strong, nonatomic) NSString *secretCode;
@@ -121,14 +122,7 @@
 }
 
 -(NSString *)generateCode {
-    NSString *possibilities = @"RGBY";
-    NSMutableString *code = [NSMutableString stringWithCapacity:4];
-    for (NSUInteger i = 0U; i < 4; i++) {
-        u_int32_t randomIndex = arc4random() % [possibilities length];
-        unichar randomCharacter = [possibilities characterAtIndex:randomIndex];
-        [code appendFormat:@"%C", randomCharacter];
-    }
-    return code;
+    return [[[CodeMaker alloc] init] generateCode];
 }
 
 -(void)hideKeyboard {
