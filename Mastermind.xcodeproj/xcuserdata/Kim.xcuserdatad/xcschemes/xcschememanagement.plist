@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MastermindSpecs.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>3B6D51A119B797A300242475</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>3BC3DE4319B3B2D800F79852</key>
 		<dict>
 			<key>primary</key>
